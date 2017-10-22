@@ -1,4 +1,3 @@
-
 Author = 'Azir_Zhang'
 %{
 c = concentrate of xxx
@@ -27,5 +26,6 @@ k = b(1) + b(2)*(1+(b(3)*c.^(-1)).^b(4)).^(-1)
 semilogx(y, f, '', y, g, '', c(1), t(1),'-bO', c(1), n(1), '-rO', c(2), t(2),'-bO', c(2), n(2), '-rO', c(3), t(3),'-bO', c(3), n(3), '-rO', c(4), t(4),'-bO', c(4), n(4), '-rO', c(5), t(5),'-bO', c(5), n(5), '-rO', c(6), t(6),'-bO', c(6), n(6), '-rO', c(7), t(7),'-bO', c(7), n(7), '-rO');
 grid on 
 xlabel('thiosulfate log(uM)')
-ylabel('chromoprotein')
-title('Top 10 and Nissle 1917 in Oxygen Environment')
+ylabel('Florescence')
+title('Top 10 and Nissle 1917 in Aerobic Environment')
+legend('Top10', 'Nissel1917')

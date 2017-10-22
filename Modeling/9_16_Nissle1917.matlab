@@ -1,10 +1,8 @@
-
-
 Author = 'Azir_Zhang'
 %{
 c = concentrate of xxx
-t = data of oxide environment (blue)
-n = data of deoxide environment (red)
+t = data of aerobic environment (blue)
+n = data of anaerobic environment (red)
 %}
 c=[1000 100 10 0]
 t=[2008.7 723.3 263.3 261]
@@ -28,5 +26,6 @@ k = b(1) + b(2)*(1+(b(3)*c.^(-1)).^b(4)).^(-1)
 semilogx(y, f, '', y, g, '', c(1), t(1),'-bO', c(1), n(1), '-rO', c(2), t(2),'-bO', c(2), n(2), '-rO', c(3), t(3),'-bO', c(3), n(3), '-rO', c(4), t(4),'-bO', c(4), n(4), '-rO');
 grid on 
 xlabel('thiosulfate log(uM)')
-ylabel('chromoprotein')
-title('Nissle 1917 in Oxide and Deoxide Environment')
+ylabel('Florescence')
+title('Nissle 1917 in Aerobic and Anaerobic Environment')
+legend('aerobic', 'anaerobic')
