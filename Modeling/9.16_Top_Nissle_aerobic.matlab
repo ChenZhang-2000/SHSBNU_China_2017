@@ -1,12 +1,12 @@
 Author = 'Azir_Zhang'
 %{
 c = concentrate of xxx
-t = data of aerobic environment (darkcyan)
-n = data of anaerobic environment (orangered)
+t = data of Top 10 (darkcyan)
+n = data of Nissle 1917 (orangered)
 %}
 c=[1000 100 10 0]
-t=[2008.7 723.3 263.3 261]
-n=[1625.7 645.7 232 234]
+t=[1452.3 822 389 327.7]
+n=[2008.7 723.3 263.3 261]
 
 x0 = [500 3400 130 1]
 
@@ -27,7 +27,7 @@ semilogx(y, f, '', y, g, '', c(1), t(1),'-bO', c(1), n(1), '-rO', c(2), t(2),'-b
 grid on 
 xlabel('thiosulfate log(uM)', 'fontsize', 14)
 ylabel('Florescence', 'fontsize', 14)
-title('Nissle 1917 in Aerobic and Anaerobic Environment', 'fontsize', 16)
-legend('aerobic', 'anaerobic');
+title('Top 10 and Nissle 1917 in Aerobic Environment', 'fontsize', 16)
+legend('Top 10', 'Nissle 1917');
 set(legend,...
     'Position',[0.175833331085387 0.793730156913636 0.167500002247947 0.0869047637212845]);
